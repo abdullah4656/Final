@@ -13,7 +13,7 @@ function App() {
   const contactFormRef = useRef(null);
   return (
     <>
-      <Router>
+      <Router basename={import.meta.env.BASE_URL}>
         <Navbar contactFormRef={contactFormRef} />
         <Into />
         <Aboutme />
